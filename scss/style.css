@@ -265,6 +265,11 @@ i {
   background-color: #82c0cc;
 }
 
+.descripcionProductos > ul > li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .btn-primary {
   background-color: #82c0cc;
   color: black;
