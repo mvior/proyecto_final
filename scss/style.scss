@@ -42,6 +42,11 @@ header {
   margin-left: 1rem;
   display: flex;
 }
+
+.logo {
+  width: 20%;
+}
+
 .container-fluid {
   margin-right: 1rem;
   @include encabezado;

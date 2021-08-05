@@ -30,6 +30,10 @@ header {
   display: flex;
 }
 
+.logo {
+  width: 20%;
+}
+
 .container-fluid {
   margin-right: 1rem;
   display: -webkit-box;
