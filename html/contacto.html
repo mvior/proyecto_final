@@ -53,39 +53,17 @@
     <h1>Agencia de Viaje</h1>
   </nav>
 
-  <section class="contacto">
+ <section class="contacto">
     <article class="infoDeContacto">
       <form method="GET">
         <h2>Contacto</h2>
-        <fieldset>
-          <legend>Información Personal</legend>
-          <label for="nombre">Nombre:</label>
-          <input type="text" value="" name="nombre" />
-          <label for="Email">Email:</label>
-          <input type="email" name="Email" />
-          <label for="viajero">Tipo de Viajero:</label>
-          <select name="viajero">
-            <option value="cultural">Cultural</option>
-            <option value="familiar">Familiar</option>
-            <option value="deLujo">De Lujo</option>
-            <option value="practico">Práctico</option>
-            <option value="aventurero">Aventurero</option>
-          </select>
-        </fieldset>
-        <fieldset>
-          <legend>Comentarios</legend>
-          <label for="texto"></label>
-          <textarea name="texto" id="" cols="30" rows="5"></textarea>
-        </fieldset>
-        <fieldset>
-          <legend>Envío</legend>
-          <label for="check">Acepto enviar mis datos a la agencia</label>
-          <input type="checkbox" name="check" value="" />
-          <input type="submit" value="Enviar" />
-          <input type="reset" value="Limpiar formulario" />
-        </fieldset>
-    </article>
-    </form>
+        <input type="text" value="" name="nombre" placeholder="Nombre Completo"/>
+        <input type="email" name="Email" placeholder="Dirección de Email"/>
+        <input type="text" value="" name="telefono" placeholder="Número de Teléfono"/>
+        <textarea name="mensaje" placeholder="Escriba su consulta y nos comunicaremos a la mayor brevedad posible"></textarea>
+        <input type="submit" value="Enviar" class="botonEnviar"/>
+      </form>
+  </article>
 
     <article class="infoDeContacto">
       <h2>Nuestra agencia</h2>
@@ -93,7 +71,7 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6760.573730001397!2d-58.37166080384586!3d-34.60272816748105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacd076071b5%3A0x4038f1f3eb34a389!2sFlorida!5e0!3m2!1ses!2sar!4v1624542779076!5m2!1ses!2sar"
         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </article>
-  </section>
+ </section>
 
   <footer class="zocalo">
     <article class="infoDeLaAgencia">

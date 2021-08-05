@@ -1,5 +1,9 @@
 /*font-family: 'Lato', sans-serif;
 font-family: 'Roboto', sans-serif;*/
+body {
+  height: 100vh;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -79,6 +83,12 @@ header {
 }
 
 article > ul > li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+div > ul > li {
   list-style: none;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
@@ -168,14 +178,12 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 40px;
-  padding: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
 }
 
 .infoDeContacto {
@@ -191,12 +199,40 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 50px;
 }
 
 .infoDeContacto > iframe {
   width: 70vh;
   height: 50vh;
+}
+
+form {
+  width: 450px;
+  margin: auto;
+  padding: 10px 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+}
+
+textarea {
+  min-height: 130px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.botonEnviar {
+  background: #82c0cc;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 10px;
 }
 
 i {
@@ -226,6 +262,11 @@ i {
   border-radius: 5px;
 }
 
+.fotoExcursiones {
+  width: 50%;
+  border-radius: 5px;
+}
+
 .productosPromocionados {
   padding: 1rem;
   display: -webkit-box;
@@ -251,12 +292,31 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.infoProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.infoProductos > h3 {
+  background-color: #82c0cc;
+  border-radius: 5px;
 }
 
 .descripcionProductos > h3 {
@@ -266,12 +326,58 @@ i {
 
 .descripcionProductos > h3:hover {
   padding: 20px;
+  border-radius: 5px;
   background-color: #82c0cc;
 }
 
 .descripcionProductos > ul > li {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.infoDeError {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.volver {
+  background-color: #82c0cc;
+  padding: 0.5rem 0.3rem;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+.Error404 {
+  width: 50%;
 }
 
 .btn-primary {
@@ -366,6 +472,9 @@ i {
     width: 30vh;
     height: 30vh;
   }
+  form {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 415px) and (max-width: 770px) {
@@ -411,6 +520,9 @@ i {
     width: 60vh;
     height: 50vh;
   }
+  form {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 761px) and (max-width: 1024px) {
@@ -436,6 +548,9 @@ i {
   .productosDestacados > div:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+  form {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
