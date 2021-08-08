@@ -27,9 +27,9 @@ $fuentePrincipal: "Roboto", sans-serif;
   justify-content: space-evenly;
 }
 
-body {
+/*body {
   height: 100vh;
-}
+}*/
 
 * {
   margin: 0px;
@@ -93,6 +93,7 @@ div > ul > li {
   list-style: none;
   font-family: $fuentePrincipal;
   line-height: 1.5;
+  padding: 0.4rem;
 }
 
 footer {
@@ -111,6 +112,7 @@ section {
 h1,
 h2,
 h3,
+h4,
 h5 {
   @include titulos;
   font-size: 1.3rem;
@@ -118,6 +120,10 @@ h5 {
 
 h1 {
   font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 p,
@@ -133,7 +139,7 @@ form {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: stretch; /*flex-start;*/
 }
 
 .productosDestacados > div {
@@ -202,6 +208,7 @@ i {
   align-items: center;
   justify-content: center;
 }
+
 .fotoProductos {
   width: 40%;
   border-radius: 5px;
@@ -234,19 +241,11 @@ i {
   justify-content: space-around;
 }
 
-.infoProductos > h3 {
+.featurette-heading {
   background-color: $colorFondo;
   border-radius: 5px;
-}
-
-.descripcionProductos > h3 {
-  transition: all 1s;
-}
-
-.descripcionProductos > h3:hover {
-  padding: 20px;
-  border-radius: 5px;
-  background-color: $colorFondo;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .descripcionProductos > ul > li {
@@ -321,8 +320,25 @@ i {
     @include descripcionProductos;
   }
 
+  .fotoPaquete {
+    max-width: 90%;
+    display: block;
+    margin: auto;
+  }
+
+  .featurette-heading {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
   .fotoProductos {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .fotoExcursiones {
     width: 100%;
+    height: auto;
   }
 
   .contacto {
@@ -343,6 +359,19 @@ i {
   }
 }
 
+@media only screen and (min-width: 412px) and (max-width: 415px) {
+
+  .productosDestacados {
+    width: 24.7rem !important;
+
+  }
+  .card {
+    width: 24rem !important;
+  }
+
+
+}
+
 @media only screen and (min-width: 415px) and (max-width: 770px) {
   .descripcionProductos {
     padding: 1rem;
@@ -352,7 +381,19 @@ i {
     transform: scale(1);
   }
   .fotoProductos {
-    width: 100vh;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .fotoExcursiones {
+    width: 100%;
+    height: auto;
+  }
+
+  .fotoPaquete {
+    max-width: 90%;
+    display: block;
+    margin: auto;
   }
 
   .contacto {
@@ -371,14 +412,37 @@ i {
   form {
     width: 100%;
   }
+
+  .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .featurette-heading {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
 }
-@media only screen and (min-width: 761px) and (max-width: 1024px) {
+@media only screen and (min-width: 771px) and (max-width: 1024px) {
   .fotoProductos {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .fotoExcursiones {
     width: 80%;
+    height: auto;
   }
 
   .descripcionProductos {
     padding: 1rem;
+    @include descripcionProductos;
+  }
+
+  .row {
     @include descripcionProductos;
   }
 
