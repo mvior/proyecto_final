@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/bootstrap.min.css" />
   <title>Paquetes Turísticos</title>
+  <link rel="shortcut icon" href="/assets/LogoFavicon.png" type="image/x-icon">
   <link rel="stylesheet" href="../scss/style.css" />
   <script src="https://kit.fontawesome.com/e78fc278fc.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,8 +34,7 @@
               <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="paquetesTuristicos.html" tabindex="-1" aria-disabled="true">Paquetes
-                Turisticos</a>
+              <a class="nav-link active" aria-current="page" href="paquetesTuristicos.html">Paquetes Turisticos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="excursiones.html">Excursiones</a>
@@ -51,81 +51,122 @@
     </nav>
   </header>
 
-  <div class="fondo">
+  <section class="tituloHeader paquetesHeader">
     <h1>Agencia de Viajes</h1>
     <h2>Paquetes Turísticos Destacados</h2>
-    </niv>
+  </section>
+  <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+      style="height: 100%; width: 100%;">
+      <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+        style="stroke: none; fill: #d8d8db;"></path>
+    </svg>
+  </div>
 
-    <section class="productosPromocionados">
-      <article class="descripcionProductos">
-        <img class="fotoExcursiones" src="../assets/ElCalafateElChaltenAventura.jpg" alt="Lago del Desierto">
-        <div class="infoProductos">
-          <h3 class="featurette-heading">Paquete Aventura El Chaltén</h3>
-          <ul>
-            <li>Visite El Chaltén, nombrada la Capital Nacional del Trekking, gracias a sus numerosos senderos que
-              recorren
-              el Parque Nacional Los Glaciares. En este viaje podrás observar importantes cerros de la Cordillera de los
-              Andes y las lagunas formadas por los deshielos.</li>
-            <li>Este completo viaje incluye tres noches de alojamiento con desayuno incluido, excursiones y traslados
-              ida y
-              vuelta desde el aeropuerto de El Calafate.</li>
-            <li>Podrá elegir entre tres categorías de alojamiento: Clásico (3 estrellas), Superior (4 estrellas) y De
-              Lujo
-              (5 estrellas).</li>
-            <li>Durante las excursiones, realizarás un trekking hacia el Glaciar Cagliero, en donde podrás caminar sobre
-              el
-              hielo. También incluimos una actividad de rafting sobre el Río de las Vueltas.</li>
+  <section class="productosPromocionados">
+    <article class="descripcionProductos">
+      <img class="fotoExcursiones" src="../assets/ElCalafateElChaltenAventura.jpg" alt="Lago del Desierto">
+      <div class="infoProductos">
+        <h3 class="featurette-heading">Paquete Aventura El Chaltén</h3>
+        <ul class="descripcion">
+          <li>Visite El Chaltén, nombrada la Capital Nacional del Trekking, gracias a sus numerosos senderos que
+            recorren
+            el Parque Nacional Los Glaciares. En este viaje podrás observar importantes cerros de la Cordillera de los
+            Andes y las lagunas formadas por los deshielos.</li>
+          <li>Este completo viaje incluye tres noches de alojamiento con desayuno incluido, excursiones y traslados
+            ida y
+            vuelta desde el aeropuerto de El Calafate.</li>
+          <li>Podrá elegir entre tres categorías de alojamiento: Clásico (3 estrellas), Superior (4 estrellas) y De
+            Lujo
+            (5 estrellas).</li>
+          <li>Durante las excursiones, realizarás un trekking hacia el Glaciar Cagliero, en donde podrás caminar sobre
+            el
+            hielo. También incluimos una actividad de rafting sobre el Río de las Vueltas.</li>
           </ul>
-        </div>
-      </article>
-      <article class="descripcionProductos">
-        <img class="fotoExcursiones" src="../assets/glaciarperitomoreno3.jpg" alt="Glaciar Perito Moreno">
-        <div class="infoProductos">
-          <h3 class="featurette-heading">Paquete El Calafate Clásico</h3>
-          <ul>
-            <li>Con nuestro paquete de viaje El Calafate Clásico aprovechará al máximo sus vacaciones en uno de los
-              lugares
-              más reconocidos de la Patagonia Argentina.</li>
-            <li>Este completo viaje incluye tres noches de alojamiento con desayuno incluido, excursiones y traslados
-              ida y
-              vuelta desde el aeropuerto de El Calafate.</li>
-            <li>Podrá elegir entre tres categorías de alojamiento: Clásico (3 estrellas), Superior (4 estrellas) y De
-              Lujo
-              (5 estrellas).</li>
-            <li>Durante las excursiones visitaras el Parque Nacional Los Glaciares y recorreras las pasarelas que se
-              encuentran frente al Glaciar Perito Moreno para obtener las mejores vistas. Además, navegaras por una hora
-              frente al glaciar en un cómodo catamarán.</li>
-          </ul>
-        </div>
-      </article>
-    </section>
-
-    <footer class="zocalo">
-      <article class="infoDeLaAgencia">
-        <h3>Donde nos encontramos</h3>
-        <h4>Agencia de Viajes</h4>
-        <ul>
-          <li>Calle 123.</li>
-          <li>Buenos Aires. Argentina.</li>
-          <li>Whatsapp: (+54 9 11) 4444-5555</li>
-          <li>Emergencias 24 Hs: (15) 6666-7777</li>
-          <li>consultas@agencia.com</li>
+          <div class="botonReserva"><input type="submit" value="Hace tu reserva" class="reserva"/></div>
+      </div>
+    </article>
+    <article class="descripcionProductos">
+      <img class="fotoExcursiones" src="../assets/glaciarperitomoreno3.jpg" alt="Glaciar Perito Moreno">
+      <div class="infoProductos">
+        <h3 class="featurette-heading">Paquete El Calafate Clásico</h3>
+        <ul class="descripcion">
+          <li>Con nuestro paquete de viaje El Calafate Clásico aprovechará al máximo sus vacaciones en uno de los
+            lugares
+            más reconocidos de la Patagonia Argentina.</li>
+          <li>Este completo viaje incluye tres noches de alojamiento con desayuno incluido, excursiones y traslados
+            ida y
+            vuelta desde el aeropuerto de El Calafate.</li>
+          <li>Podrá elegir entre tres categorías de alojamiento: Clásico (3 estrellas), Superior (4 estrellas) y De
+            Lujo
+            (5 estrellas).</li>
+          <li>Durante las excursiones visitaras el Parque Nacional Los Glaciares y recorreras las pasarelas que se
+            encuentran frente al Glaciar Perito Moreno para obtener las mejores vistas. Además, navegaras por una hora
+            frente al glaciar en un cómodo catamarán.</li>
         </ul>
-      </article>
+        <div class="botonReserva"><input type="submit" value="Hace tu reserva" class="reserva"/></div>
+      </div>
+    </article>
+  </section>
 
-      <article class="infoDeLaAgencia">
-        <h3>Nuestras Redes Sociales</h3>
-        <div class="redes">
-          <a href="https://instagram.com"><i class="fab fa-instagram-square"></i></a>
-          <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-          <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+  <section class="otrosPaquetes">
+    <article class="contenedor">
+      <h3 class="featurette-heading tituloHotel">Otros Paquetes Recomendados</h3>
+      <div class="infopaquete">
+        <div class="resumenPaquete">
+          <img src="/assets/TrekkingLasTorresPequeño.jpg" alt="Circuito W Trek Torres del Paine">
+          <h4>Circuito W Trek Torres del Paine</h4>
+          <p>Disfruta de la Patagonia extrema con una experiencia única de cinco días que te llevará a recorrer el
+            corazón del Parque Nacional Torres del Paine. Incluye la navegación en Catamarán sobre el Lago Pehoé.</p>
+            <div class="botonReserva"><input type="submit" value="Mas Información" class="reserva"/></div>
         </div>
-      </article>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"></script>
-    <script src="../js/bootstrap.min.js"></script>
+
+        <div class="resumenPaquete">
+          <img src="/assets/BikeTourPatagoniaPequeño.jpg" alt="Torres del Paine en Bicicleta">
+          <h4>Torres del Paine en Bicicleta</h4>
+          <p>Este programa de tres días te permitirá recorrer en bicicleta los lugares más destacados del Parque Nacional: las
+            famosas torres de granito en Base Las Torres, el Valle Francés y el Glaciar Grey.</p>
+            <div class="botonReserva"><input type="submit" value="Mas Información" class="reserva"/></div>
+        </div>
+
+        <div class="resumenPaquete">
+          <img src="/assets/SalarGrande.jpg" alt="Jujuy Aventura">
+          <h4>Paquete Jujuy Aventura</h4>
+          <p>Recorre durante cuatro días la maravillosa Provincia de Jujuy. Conoceras las Salinas Grandes, las quebradas y valles llevan al Tren de las Nubes y Humahuaca con su Cerro de los Siete Colores.
+          </p>
+          <div class="botonReserva"><input type="submit" value="Mas Información" class="reserva"/></div>
+        </div>
+
+      </div>
+    </article>
+
+  </section>
+
+  <footer class="zocalo">
+    <article class="infoDeLaAgencia">
+      <h3>Donde nos encontramos</h3>
+      <h4>Agencia de Viajes</h4>
+      <ul>
+        <li>Calle 123.</li>
+        <li>Buenos Aires. Argentina.</li>
+        <li>Whatsapp: (+54 9 11) 4444-5555</li>
+        <li>Emergencias 24 Hs: (15) 6666-7777</li>
+        <li>consultas@agencia.com</li>
+      </ul>
+    </article>
+
+    <article class="infoDeLaAgencia">
+      <h3>Nuestras Redes Sociales</h3>
+      <div class="redes">
+        <a href="https://instagram.com"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+      </div>
+    </article>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>

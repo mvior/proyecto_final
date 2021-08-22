@@ -1,11 +1,12 @@
 /*font-family: 'Lato', sans-serif;
 font-family: 'Roboto', sans-serif;*/
-/*body {
-  height: 100vh;
-}*/
 * {
   margin: 0px;
   padding: 0px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -117,6 +118,10 @@ section {
   background-color: #d8d8db;
 }
 
+.tituloHeader {
+  background-color: white;
+}
+
 h1,
 h2,
 h3,
@@ -131,11 +136,11 @@ h5 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 p,
@@ -161,7 +166,6 @@ form {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  /*flex-start;*/
 }
 
 .productosDestacados > div {
@@ -190,6 +194,7 @@ form {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 20px;
+  margin-top: 15px;
 }
 
 .infoDeContacto {
@@ -269,12 +274,18 @@ i {
 }
 
 .fotoExcursiones {
-  width: 50%;
+  width: 40%;
   border-radius: 5px;
+}
+
+.fotoPaquete {
+  border-radius: 5px;
+  padding-top: 30px;
 }
 
 .productosPromocionados {
   padding: 1rem;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,6 +317,7 @@ i {
 }
 
 .infoProductos {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,6 +330,10 @@ i {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.infoExcursiones {
+  width: 50%;
 }
 
 .featurette-heading {
@@ -389,6 +405,325 @@ i {
   padding: 0.4rem 0.7rem;
   border-radius: 8px;
   background-color: black;
+}
+
+/* HOTELES Y OTROS PAQUETES*/
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.tituloHotel {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hotelHeader {
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6ed6ed80), to(rgba(33, 147, 176, 0.5))), url(/assets/SenderoLodgeTrevelin.jpg);
+  background: linear-gradient(to right, #6ed6ed80, rgba(33, 147, 176, 0.5)), url(/assets/SenderoLodgeTrevelin.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contactoHeader {
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6ed6ed80), to(rgba(33, 147, 176, 0.5))), url(/assets/TrekkingValleFrances.jpg);
+  background: linear-gradient(to right, #6ed6ed80, rgba(33, 147, 176, 0.5)), url(/assets/TrekkingValleFrances.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.excursionesHeader {
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6ed6ed80), to(rgba(33, 147, 176, 0.4))), url(/assets/SalinasGrandes.jpg);
+  background: linear-gradient(to right, #6ed6ed80, rgba(33, 147, 176, 0.4)), url(/assets/SalinasGrandes.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.paquetesHeader {
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6ed6ed80), to(rgba(33, 147, 176, 0.4))), url(/assets/TrekkingLasTorres.jpg);
+  background: linear-gradient(to right, #6ed6ed80, rgba(33, 147, 176, 0.4)), url(/assets/TrekkingLasTorres.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.tituloHeader {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.wave {
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.hoteles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.infoHoteles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.fotoHoteles {
+  width: 80%;
+  border-radius: 5px;
+}
+
+.hotelesPromocionados .descripcionHoteles {
+  width: 80%;
+}
+
+.hotelesPromocionados h3 {
+  margin-bottom: 15px;
+}
+
+.descripcion {
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.galeriaHoteles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.imagenHotel {
+  width: 24%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imagenHotel > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.hoverGaleria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background: rgba(128, 191, 203, 0.61);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hoverGaleria p {
+  color: white;
+  font-weight: bold;
+}
+
+.imagenHotel:hover .hoverGaleria {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.otrosPaquetes {
+  padding-bottom: 30px;
+}
+
+.infopaquete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resumenPaquete {
+  width: 28%;
+  text-align: center;
+}
+
+.resumenPaquete img {
+  width: 90%;
+}
+
+.resumenPaquete h4 {
+  margin: 10px 0;
+}
+
+.resumenPaquete p {
+  font-weight: 300;
+  text-align: justify;
+}
+
+.botonReserva {
+  padding: 5px;
+}
+
+.reserva {
+  background: #82c0cc;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.containerExcursiones {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.excursiones__grid {
+  display: -ms-grid;
+  display: grid;
+  height: 550px;
+      grid-template-areas: "DegustacionDeVinosMendoza DegustacionDeVinosMendoza CataratasDelIguazu IslaVictoria" "DegustacionDeVinosMendoza DegustacionDeVinosMendoza RaftingRioMendoza TrenALasNubes";
+  gap: 10px;
+}
+
+.excursiones__conjunto {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.excursiones__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.excursiones__conjunto:nth-of-type(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: DegustacionDeVinosMendoza;
+}
+
+.excursiones__conjunto:nth-of-type(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: CataratasDelIguazu;
+}
+
+.excursiones__conjunto:nth-of-type(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: IslaVictoria;
+}
+
+.excursiones__conjunto:nth-of-type(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: RaftingRioMendoza;
+}
+
+.excursiones__conjunto:nth-of-type(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: TrenALasNubes;
+}
+
+.otrasExcursiones__hover {
+  position: absolute;
+  background: rgba(128, 191, 203, 0.61);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  cursor: pointer;
+}
+
+.excursiones__conjunto:hover .otrasExcursiones__hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 @media only screen and (max-width: 414px) {
