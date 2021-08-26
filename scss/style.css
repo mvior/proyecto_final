@@ -142,8 +142,8 @@ font-family: 'Roboto', sans-serif;*/
   background: #2193b0;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#6ed6ed80), to(rgba(33, 147, 176, 0.4))), url(/assets/SalinasGrandes.jpg);
-  background: linear-gradient(to right, #6ed6ed80, rgba(33, 147, 176, 0.4)), url(/assets/SalinasGrandes.jpg);
+  background: -webkit-gradient(linear, left top, right top, from(#6ed6ed80), to(rgba(33, 147, 176, 0.4))), url(../assets/SalinasGrandes.jpg);
+  background: linear-gradient(to right, #6ed6ed80, rgba(33, 147, 176, 0.4)), url(../assets/SalinasGrandes.jpg);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 

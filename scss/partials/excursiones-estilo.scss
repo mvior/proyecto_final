@@ -30,122 +30,120 @@ $fuentePrincipal: "Roboto", sans-serif;
   align-items: center;
 }
 
-// HTML EXCURSIONES
-
 .excursionesHeader {
-    background: #2193b0; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to right,
-        hsla(191, 78%, 68%, 0.4),
-        hsla(192, 68%, 41%, 0.4)
-      ),
-      url(../assets/SalinasGrandes.jpg); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6ed6ed80, hsla(192, 68%, 41%, 0.4)),
-      url(../assets/SalinasGrandes.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  
-  .containerExcursiones {
-    padding: 60px 0;
-    width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 70px 0;
-    max-width: 1200px;
-  }
-  
-  .excursionesPromocionadas {
-    min-height: 400px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 80px;
-    justify-items: center;
-    align-items: center;
-  }
-  
-  .excursionesPromocionadas__imagenes {
-    text-align: center;
-  }
-  
-  .excursionesPromocionadas__imagenes--left {
-    text-align: left;
-  }
-  
-  .excursionesPromocionadas__foto {
-    max-width: 80%;
-    border-radius: 5px;
-  }
-  
-  .excursionesPromocionadas__descripcion {
-    margin-bottom: 20px;
-    line-height: 1.5;
-    text-align: center;
-  }
-  
-  .botonExcursion {
-    width: 35%;
-    margin-left: 200px;
-  }
-  
-  .excursiones__grid {
-    display: grid;
-    height: 550px;
-    grid-template-areas:
-      "DegustacionDeVinosMendoza DegustacionDeVinosMendoza CataratasDelIguazu IslaVictoria"
-      "DegustacionDeVinosMendoza DegustacionDeVinosMendoza RaftingRioMendoza TrenALasNubes";
-    gap: 10px;
-  }
-  
-  .excursiones__conjunto {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .excursiones__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-  }
-  
-  .excursiones__conjunto:nth-of-type(1) {
-    grid-area: DegustacionDeVinosMendoza;
-  }
-  
-  .excursiones__conjunto:nth-of-type(2) {
-    grid-area: CataratasDelIguazu;
-  }
-  
-  .excursiones__conjunto:nth-of-type(3) {
-    grid-area: IslaVictoria;
-  }
-  
-  .excursiones__conjunto:nth-of-type(4) {
-    grid-area: RaftingRioMendoza;
-  }
-  
-  .excursiones__conjunto:nth-of-type(5) {
-    grid-area: TrenALasNubes;
-  }
-  
-  .otrasExcursiones__hover {
-    position: absolute;
-    background: hsla(190, 42%, 65%, 0.61);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transform: scale(0);
-    transition: transform 1s;
-    cursor: pointer;
-  }
-  
-  .excursiones__conjunto:hover .otrasExcursiones__hover {
-    transform: scale(1);
-  }
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+      to right,
+      hsla(191, 78%, 68%, 0.4),
+      hsla(192, 68%, 41%, 0.4)
+    ),
+    url(../assets/SalinasGrandes.jpg); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6ed6ed80, hsla(192, 68%, 41%, 0.4)),
+    url(../assets/SalinasGrandes.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.containerExcursiones {
+  padding: 60px 0;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 70px 0;
+  max-width: 1200px;
+}
+
+.excursionesPromocionadas {
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 80px;
+  justify-items: center;
+  align-items: center;
+}
+
+.excursionesPromocionadas__imagenes {
+  text-align: center;
+}
+
+.excursionesPromocionadas__imagenes--left {
+  text-align: left;
+}
+
+.excursionesPromocionadas__foto {
+  max-width: 80%;
+  border-radius: 5px;
+}
+
+.excursionesPromocionadas__descripcion {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.botonExcursion {
+  width: 35%;
+  margin-left: 200px;
+}
+
+.excursiones__grid {
+  display: grid;
+  height: 550px;
+  grid-template-areas:
+    "DegustacionDeVinosMendoza DegustacionDeVinosMendoza CataratasDelIguazu IslaVictoria"
+    "DegustacionDeVinosMendoza DegustacionDeVinosMendoza RaftingRioMendoza TrenALasNubes";
+  gap: 10px;
+}
+
+.excursiones__conjunto {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.excursiones__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.excursiones__conjunto:nth-of-type(1) {
+  grid-area: DegustacionDeVinosMendoza;
+}
+
+.excursiones__conjunto:nth-of-type(2) {
+  grid-area: CataratasDelIguazu;
+}
+
+.excursiones__conjunto:nth-of-type(3) {
+  grid-area: IslaVictoria;
+}
+
+.excursiones__conjunto:nth-of-type(4) {
+  grid-area: RaftingRioMendoza;
+}
+
+.excursiones__conjunto:nth-of-type(5) {
+  grid-area: TrenALasNubes;
+}
+
+.otrasExcursiones__hover {
+  position: absolute;
+  background: hsla(190, 42%, 65%, 0.61);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: scale(0);
+  transition: transform 1s;
+  cursor: pointer;
+}
+
+.excursiones__conjunto:hover .otrasExcursiones__hover {
+  transform: scale(1);
+}

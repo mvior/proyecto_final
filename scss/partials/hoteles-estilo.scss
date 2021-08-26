@@ -31,100 +31,100 @@ $fuentePrincipal: "Roboto", sans-serif;
 }
 
 .tituloHotel {
-    width: 95%;
-  }
-  
-  .contenedor {
-    padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-  }
-  
-  .hotelHeader {
-    background: #2193b0; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to right,
-        hsla(191, 78%, 68%, 0.212),
-        hsla(192, 68%, 41%, 0.212)
-      ),
-      url(../assets/SenderoLodgeTrevelin.jpg); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6ed6ed80, hsla(192, 68%, 41%, 0.5)),
-      url(../assets/SenderoLodgeTrevelin.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  
-  .hoteles {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-  }
-  
-  .infoHoteles {
-    @include columnCenter;
-  }
-  
-  .fotoHoteles {
-    width: 80%;
-    border-radius: 5px;
-  }
-  
-  .hotelesPromocionados .descripcionHoteles {
-    width: 80%;
-  }
-  
-  .hotelesPromocionados h3 {
-    margin-bottom: 15px;
-  }
-  
-  .descripcion {
-    padding: 0px 0px 30px 15px;
-    font-weight: 300;
-    text-align: center;
-  }
-  
-  .galeriaHoteles {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  
-  .imagenHotel {
-    width: 24%;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-  }
-  
-  .imagenHotel > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  
-  .hoverGaleria {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    transform: scale(0);
-    background: hsla(190, 42%, 65%, 0.61);
-    transition: transform 1s;
-    @include columnCenterCenter;
-    align-items: center;
-  }
-  
-  .hoverGaleria p {
-    color: white;
-    font-weight: bold;
-  }
-  
-  .imagenHotel:hover .hoverGaleria {
-    transform: scale(1);
-  }
+  width: 95%;
+}
+
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.hotelHeader {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+      to right,
+      hsla(191, 78%, 68%, 0.212),
+      hsla(192, 68%, 41%, 0.212)
+    ),
+    url(../assets/SenderoLodgeTrevelin.jpg); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6ed6ed80, hsla(192, 68%, 41%, 0.5)),
+    url(../assets/SenderoLodgeTrevelin.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.hoteles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.infoHoteles {
+  @include columnCenter;
+}
+
+.fotoHoteles {
+  width: 80%;
+  border-radius: 5px;
+}
+
+.hotelesPromocionados .descripcionHoteles {
+  width: 80%;
+}
+
+.hotelesPromocionados h3 {
+  margin-bottom: 15px;
+}
+
+.descripcion {
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.galeriaHoteles {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.imagenHotel {
+  width: 24%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imagenHotel > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hoverGaleria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background: hsla(190, 42%, 65%, 0.61);
+  transition: transform 1s;
+  @include columnCenterCenter;
+  align-items: center;
+}
+
+.hoverGaleria p {
+  color: white;
+  font-weight: bold;
+}
+
+.imagenHotel:hover .hoverGaleria {
+  transform: scale(1);
+}

@@ -31,88 +31,88 @@ $fuentePrincipal: "Roboto", sans-serif;
 }
 
 .paquetesHeader {
-    background: #2193b0; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to right,
-        hsla(191, 78%, 68%, 0.4),
-        hsla(192, 68%, 41%, 0.4)
-      ),
-      url(../assets/TrekkingLasTorres.jpg); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6ed6ed80, hsla(192, 68%, 41%, 0.4)),
-      url(../assets/TrekkingLasTorres.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  
-  .fotoPaquetes {
-    width: 40%;
-    border-radius: 8px;
-  }
-  
-  .productosPromocionados {
-    padding: 1rem;
-    margin-top: 10px;
-    @include columnCenterCenter;
-    justify-content: space-around;
-  }
-  
-  .descripcionProductos {
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .infoProductos {
-    width: 50%;
-    @include columnCenterCenter;
-    justify-content: space-around;
-  }
-  
-  .descripcionProductos > ul > li {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .otrosPaquetes {
-    padding-bottom: 30px;
-  }
-  
-  .infopaquete {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .resumenPaquete {
-    width: 28%;
-    text-align: center;
-  }
-  
-  .resumenPaquete img {
-    width: 90%;
-  }
-  
-  .resumenPaquete h4 {
-    margin: 10px 0;
-  }
-  
-  .resumenPaquete p {
-    font-weight: 300;
-    text-align: center;
-  }
-  
-  .botonReserva {
-    padding: 5px;
-    width: 30%;
-  }
-  
-  .reserva {
-    background: $colorFondo;
-    border-radius: 8px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .botonInfo {
-    width: 100%;
-  }
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+      to right,
+      hsla(191, 78%, 68%, 0.4),
+      hsla(192, 68%, 41%, 0.4)
+    ),
+    url(../assets/TrekkingLasTorres.jpg); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6ed6ed80, hsla(192, 68%, 41%, 0.4)),
+    url(../assets/TrekkingLasTorres.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.fotoPaquetes {
+  width: 40%;
+  border-radius: 8px;
+}
+
+.productosPromocionados {
+  padding: 1rem;
+  margin-top: 10px;
+  @include columnCenterCenter;
+  justify-content: space-around;
+}
+
+.descripcionProductos {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.infoProductos {
+  width: 50%;
+  @include columnCenterCenter;
+  justify-content: space-around;
+}
+
+.descripcionProductos > ul > li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.otrosPaquetes {
+  padding-bottom: 30px;
+}
+
+.infopaquete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resumenPaquete {
+  width: 28%;
+  text-align: center;
+}
+
+.resumenPaquete img {
+  width: 90%;
+}
+
+.resumenPaquete h4 {
+  margin: 10px 0;
+}
+
+.resumenPaquete p {
+  font-weight: 300;
+  text-align: center;
+}
+
+.botonReserva {
+  padding: 5px;
+  width: 30%;
+}
+
+.reserva {
+  background: $colorFondo;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.botonInfo {
+  width: 100%;
+}
