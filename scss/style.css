@@ -1128,18 +1128,6 @@ form {
   .botonReserva {
     width: 45%;
   }
-  /*
-.contacto {
-  display: flex;
-  @include columnCenter;
-}
-
-.infoDeContacto {
-  > iframe {
-    width: 30vh;
-    height: 30vh;
-  }
-} */
   form {
     width: 100%;
   }
