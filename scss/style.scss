@@ -1,6 +1,16 @@
 /*font-family: 'Lato', sans-serif;
 font-family: 'Roboto', sans-serif;*/
 
+@import "partials/index-estilo.scss";
+
+@import "partials/paquetes-estilo.scss";
+
+@import "partials/excursiones-estilo.scss";
+
+@import "partials/hoteles-estilo.scss";
+
+@import "partials/contacto-estilo.scss";
+
 $colorFondo: #82c0cc;
 $margen: 20px;
 $fuentePrincipal: "Roboto", sans-serif;
@@ -20,11 +30,17 @@ $fuentePrincipal: "Roboto", sans-serif;
   align-items: center;
 }
 
-@mixin descripcionProductos {
+@mixin columnCenter {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+
+@mixin columnCenterCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 * {
@@ -36,11 +52,18 @@ body {
   font-family: $fuentePrincipal;
 }
 
+section {
+  background-color: #d8d8db;
+}
+
+//HEADER
+
 header {
   background-color: #eef0f2;
   margin-bottom: $margen/2;
   @include encabezado;
 }
+
 .encabezadoLogo {
   margin-left: 1rem;
   display: flex;
@@ -96,6 +119,8 @@ div > ul > li {
   padding: 0.4rem;
 }
 
+//FOOTER
+
 footer {
   background-color: $colorFondo;
   margin-top: $margen;
@@ -106,9 +131,18 @@ footer {
   align-items: flex-start;
 }
 
-section {
-  background-color: #d8d8db;
+i {
+  font-size: 2rem;
+  color: black;
+  margin: 0.3rem;
 }
+
+.infoDeLaAgencia {
+  @include columnCenterCenter;
+  justify-content: center;
+}
+
+// CARACTERÍSTICAS GENERALES DE TÍTULOS Y TEXTOS
 
 .tituloHeader {
   background-color: white;
@@ -136,136 +170,43 @@ form {
   font-family: $fuentePrincipal;
 }
 
-.productosDestacados {
-  text-align: center;
-  margin-top: $margen;
-  margin-bottom: $margen;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: stretch;
-}
+//TITULOS PAQUETES, EXCURSIONES Y HOTELES
 
-.contacto {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 20px;
-  margin-top: 15px;
-}
-.infoDeContacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  > iframe {
-    width: 70vh;
-    height: 50vh;
-  }
-}
-
-form {
-  width: 450px;
-  margin: auto;
-  padding: 10px 20px;
-  font-family: $fuentePrincipal;
-}
-
-input,
-textarea {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 7px;
-  font-family: $fuentePrincipal;
-  border: none;
-}
-
-textarea {
-  min-height: 130px;
-  max-height: 200px;
-  max-width: 100%;
-}
-
-.botonEnviar {
+.tituloProductos {
+  width: 98%;
+  padding: 5px;
   background: $colorFondo;
   border-radius: 8px;
   font-weight: bold;
-  padding: 10px;
+  text-transform: uppercase;
 }
 
-i {
-  font-size: 2rem;
-  color: black;
-  margin: 0.3rem;
-}
-.infoDeLaAgencia {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+// CARACTIRISTICAS GENERALES HEADER PAQUETES/EXCURSIONES/HOTELES/CONTACTO
+
+.tituloHeader {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
 
-.fotoProductos {
-  width: 40%;
-  border-radius: 5px;
+.wave {
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
-.fotoExcursiones {
-  width: 40%;
-  border-radius: 5px;
-}
-
-.fotoPaquete {
-  border-radius: 8px;
-  padding-top: 40px;
-}
-
-.productosPromocionados {
-  padding: 1rem;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-.descripcionProductos {
-  padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.infoProductos {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.infoExcursiones {
-  width: 50%;
-}
-
-.descripcionProductos > ul > li {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+//HTML ERROR
 
 .error {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include columnCenterCenter;
   justify-content: center;
 }
 
 .infoDeError {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include columnCenterCenter;
   justify-content: center;
 }
 
@@ -295,342 +236,8 @@ i {
   }
 }
 
-//TITULOS
-
-.tituloProductos {
-  width: 98%;
-  padding: 5px;
-  background: $colorFondo;
-  border-radius: 8px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.tituloHotel {
-  width: 95%;
-}
-
-/* HOTELES Y OTROS PAQUETES*/
-
-.contenedor {
-  padding: 60px 0;
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.hotelHeader {
-  background: #2193b0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-      to right,
-      hsla(191, 78%, 68%, 0.212),
-      hsla(192, 68%, 41%, 0.212)
-    ),
-    url(../assets/SenderoLodgeTrevelin.jpg); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6ed6ed80, hsla(192, 68%, 41%, 0.5)),
-    url(../assets/SenderoLodgeTrevelin.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.contactoHeader {
-  background: #2193b0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-      to right,
-      hsla(191, 78%, 68%, 0.212),
-      hsla(192, 68%, 41%, 0.212)
-    ),
-    url(../assets/TrekkingValleFrances.jpg); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6ed6ed80, hsla(192, 68%, 41%, 0.5)),
-    url(../assets/TrekkingValleFrances.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.excursionesHeader {
-  background: #2193b0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-      to right,
-      hsla(191, 78%, 68%, 0.4),
-      hsla(192, 68%, 41%, 0.4)
-    ),
-    url(../assets/SalinasGrandes.jpg); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6ed6ed80, hsla(192, 68%, 41%, 0.4)),
-    url(../assets/SalinasGrandes.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.paquetesHeader {
-  background: #2193b0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-      to right,
-      hsla(191, 78%, 68%, 0.4),
-      hsla(192, 68%, 41%, 0.4)
-    ),
-    url(../assets/TrekkingLasTorres.jpg); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6ed6ed80, hsla(192, 68%, 41%, 0.4)),
-    url(../assets/TrekkingLasTorres.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.tituloHeader {
-  width: 100%;
-  height: 600px;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-}
-
-.wave {
-  position: absolute;
-  bottom: 1%;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.hoteles {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-}
-
-.infoHoteles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.fotoHoteles {
-  width: 80%;
-  border-radius: 5px;
-}
-
-.hotelesPromocionados .descripcionHoteles {
-  width: 80%;
-}
-
-.hotelesPromocionados h3 {
-  margin-bottom: 15px;
-}
-
-.descripcion {
-  padding: 0px 0px 30px 15px;
-  font-weight: 300;
-  text-align: center;
-}
-
-.galeriaHoteles {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.imagenHotel {
-  width: 24%;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  height: 200px;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-}
-
-.imagenHotel > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.hoverGaleria {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  transform: scale(0);
-  background: hsla(190, 42%, 65%, 0.61);
-  transition: transform 1s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.hoverGaleria p {
-  color: white;
-  font-weight: bold;
-}
-
-.imagenHotel:hover .hoverGaleria {
-  transform: scale(1);
-}
-
-// OTROS PAQUETES RECOMENDADOS
-
-.otrosPaquetes {
-  padding-bottom: 30px;
-}
-
-.infopaquete {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.resumenPaquete {
-  width: 28%;
-  text-align: center;
-}
-
-.resumenPaquete img {
-  width: 90%;
-}
-
-.resumenPaquete h4 {
-  margin: 10px 0;
-}
-
-.resumenPaquete p {
-  font-weight: 300;
-  text-align: center;
-}
-
-.botonReserva {
-  padding: 5px;
-  width: 30%;
-}
-
-.reserva {
-  background: $colorFondo;
-  border-radius: 8px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.botonInfo {
-  width: 100%;
-}
-
-// EXCURSIONES
-
-.containerExcursiones {
-  padding: 60px 0;
-  width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 70px 0;
-  max-width: 1200px;
-}
-
-.excursionesPromocionadas{
-  min-height: 400px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 80px;
-  justify-items: center;
-  align-items: center;
-}
-
-.excursionesPromocionadas__imagenes {
-  text-align: center;
-}
-
-.excursionesPromocionadas__imagenes--left {
-  text-align: left;
-}
-
-.excursionesPromocionadas__foto {
-  max-width: 80%;
-  border-radius: 5px;
-}
-
-.excursionesPromocionadas__descripcion {
-  margin-bottom: 20px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.botonExcursion {
-  width: 35%;
-  margin-left: 200px;
-}
-
-//OTRAS EXCURSIONES
-.excursiones__grid {
-  display: grid;
-  height: 550px;
-  grid-template-areas:
-    "DegustacionDeVinosMendoza DegustacionDeVinosMendoza CataratasDelIguazu IslaVictoria"
-    "DegustacionDeVinosMendoza DegustacionDeVinosMendoza RaftingRioMendoza TrenALasNubes";
-  gap: 10px;
-}
-
-.excursiones__conjunto {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.excursiones__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  cursor: pointer;
-}
-
-.excursiones__conjunto:nth-of-type(1) {
-  grid-area: DegustacionDeVinosMendoza;
-}
-
-.excursiones__conjunto:nth-of-type(2) {
-  grid-area: CataratasDelIguazu;
-}
-
-.excursiones__conjunto:nth-of-type(3) {
-  grid-area: IslaVictoria;
-}
-
-.excursiones__conjunto:nth-of-type(4) {
-  grid-area: RaftingRioMendoza;
-}
-
-.excursiones__conjunto:nth-of-type(5) {
-  grid-area: TrenALasNubes;
-}
-
-.otrasExcursiones__hover {
-  position: absolute;
-  background: hsla(190, 42%, 65%, 0.61);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transform: scale(0);
-  transition: transform 1s;
-  cursor: pointer;
-}
-
-.excursiones__conjunto:hover .otrasExcursiones__hover {
-  transform: scale(1);
-}
-
-
 @media only screen and (max-width: 414px) {
-  .productosDestacados {
-    width: 22.5rem !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .card {
-    width: 22rem !important;
-  }
-
+  //FOOTER
   .zocalo {
     padding: 1rem;
     display: flex;
@@ -638,52 +245,59 @@ i {
     align-items: flex-start;
     justify-content: space-evenly;
   }
-  .descripcionProductos {
-    padding: 1rem;
-    @include descripcionProductos;
+
+  .productosDestacados {
+    width: 22.5rem !important;
+    @include columnCenterCenter;
+    justify-content: center;
   }
+  .card {
+    width: 22rem !important;
+  }
+  
+  // TITULOS PAQUETES/EXCURSIONES/HOTELES
 
   .tituloProductos {
     width: 90%;
   }
 
-  .fotoPaquete {
-    max-width: 90%;
-    display: block;
-    margin: auto;
+  //IMAGEN HEADER
+
+  .tituloHeader {
+    background-position: center;
   }
 
-  .fotoExcursiones {
-    width: 100%;
-    height: auto;
+  .wave {
+    display: none;
   }
 
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .infoDeContacto {
-    > iframe {
-      width: 30vh;
-      height: 30vh;
-    }
-  }
-  form {
-    width: 100%;
+  // HTML PAQUETES TURISTICOS
+
+  .descripcionProductos {
+    padding: 1rem;
+    @include columnCenter;
   }
 
-  .hotelesPromocionados {
+  .infoProductos {
     width: 100%;
     text-align: center;
   }
 
-  .botonReserva {
-    width: 65%;
+  .infopaquete {
+    flex-direction: column;
+    justify-content: center;
   }
 
-  // Excursiones
+  .resumenPaquete {
+    width: 100%;
+    text-align: center;
+  }
+
+  .fotoPaquetes {
+    width: 100%;
+  }
+
+  // EXCURSIONES
 
   .excursionesPromocionadas {
     grid-template-columns: 1fr;
@@ -697,8 +311,8 @@ i {
   .excursionesPromocionadas__imagenes--left {
     text-align: center;
   }
-  
-  .excursionesPromocionadas__info:last-child{
+
+  .excursionesPromocionadas__info:last-child {
     grid-row: 3/4;
   }
 
@@ -716,32 +330,29 @@ i {
   }
 
   .excursiones__grid {
-    grid-template-areas: 
-    "DegustacionDeVinosMendoza"
-    "CataratasDelIguazu "
-    "IslaVictoria"
-    "RaftingRioMendoza"
-    "TrenALasNubes";
+    grid-template-areas:
+      "DegustacionDeVinosMendoza"
+      "CataratasDelIguazu "
+      "IslaVictoria"
+      "RaftingRioMendoza"
+      "TrenALasNubes";
   }
 
-  //IMAGEN HEADER
+  //HOTELES
 
-  .tituloHeader {
-    background-position: center;
+  .hotelesPromocionados {
+    width: 100%;
+    text-align: center;
   }
 
-  .wave {
-    display: none;
+  .botonReserva {
+    width: 65%;
   }
 
   .hoteles {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    @include columnCenter;
   }
-
-  //GALERIA HOTELES
 
   .imagenHotel {
     width: 44%;
@@ -751,33 +362,33 @@ i {
     text-align: center;
   }
 
-  //PAQUETES TURISTICOS DESTACADOS
+  // HTML PAQUETES Y HOTELES
 
-  .infoProductos {
-    width: 100%;
-    text-align: center;
-  }
-
-  //OTROS PAQUETES RECOMENDADOS
-
-  .infopaquete {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .resumenPaquete {
-    width: 100%;
-    text-align: center;
-  }
-
-  // PAQUETES Y HOTELES
   .descripcion {
     margin-right: 30px;
   }
 
+  // HTML CONTACTO
+
+  .contacto {
+    display: flex;
+    @include columnCenter;
+  }
+
+  .infoDeContacto {
+    > iframe {
+      width: 30vh;
+      height: 30vh;
+    }
+  }
+  form {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 412px) and (max-width: 415px) {
+  // HTML INDEX
+
   .productosDestacados {
     width: 24.7rem !important;
   }
@@ -787,54 +398,10 @@ i {
 }
 
 @media only screen and (min-width: 415px) and (max-width: 770px) {
-  .descripcionProductos {
-    padding: 1rem;
-    @include descripcionProductos;
-  }
+  // TITULOS PAQUETES/EXCURSIONES/HOTELES
 
   .tituloProductos {
     width: 90%;
-  }
-
-  .fotoProductos {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .fotoExcursiones {
-    width: 100%;
-    height: auto;
-  }
-
-  .fotoPaquete {
-    max-width: 90%;
-    display: block;
-    margin: auto;
-  }
-
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .infoDeContacto {
-    > iframe {
-      width: 60vh;
-      height: 50vh;
-    }
-  }
-
-  form {
-    width: 100%;
-  }
-
-  .botonReserva {
-    width: 60%;
-  }
-
-  .botonExcursion {
-    width: 40%;
   }
 
   //IMAGEN HEADER
@@ -847,37 +414,16 @@ i {
     display: none;
   }
 
-  //HOTELES
-  .hoteles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  // HTML PAQUETES TURISTICOS
+  .descripcionProductos {
+    padding: 1rem;
+    @include columnCenter;
   }
-
-  .tituloHotel{
-    margin-left: 35px;
-  }
-  
-
-  //GALERIA HOTELES
-
-  .imagenHotel {
-    width: 44%;
-  }
-
-  .hoverGaleria p {
-    text-align: center;
-  }
-
-  //PAQUETES TURISTICOS DESTACADOS
 
   .infoProductos {
     width: 100%;
     text-align: center;
   }
-
-  //OTROS PAQUETES RECOMENDADOS
 
   .infopaquete {
     flex-direction: column;
@@ -889,8 +435,11 @@ i {
     text-align: center;
   }
 
-  //Excursiones
+  .fotoPaquetes {
+    width: 80%;
+  }
 
+  // HTML EXCURSIONES
   .excursionesPromocionadas {
     grid-template-columns: 1fr;
     row-gap: 60px;
@@ -903,8 +452,8 @@ i {
   .excursionesPromocionadas__imagenes--left {
     text-align: center;
   }
-  
-  .excursionesPromocionadas__info:last-child{
+
+  .excursionesPromocionadas__info:last-child {
     grid-row: 3/4;
   }
 
@@ -916,102 +465,150 @@ i {
     margin-right: 30px;
   }
 
+  .botonExcursion {
+    width: 40%;
+  }
+
   .excursiones__grid {
-    grid-template-areas: 
-    "DegustacionDeVinosMendoza CataratasDelIguazu"
-    "IslaVictoria RaftingRioMendoza"
-    "TrenALasNubes TrenALasNubes";
+    grid-template-areas:
+      "DegustacionDeVinosMendoza CataratasDelIguazu"
+      "IslaVictoria RaftingRioMendoza"
+      "TrenALasNubes TrenALasNubes";
   }
 
-}
-
-@media only screen and (min-width: 771px) and (max-width: 1024px) {
-  .fotoProductos {
-    max-width: 100%;
-    height: auto;
+  // HTML HOTELES
+  .hoteles {
+    display: flex;
+    @include columnCenter;
   }
 
-  .tituloProductos {
-    width: 90%;
+  .tituloHotel {
+    margin-left: 35px;
   }
 
-  .fotoExcursiones {
-    width: 80%;
-    height: auto;
+  .imagenHotel {
+    width: 44%;
   }
 
-  .descripcionProductos {
-    padding: 1rem;
-    @include descripcionProductos;
+  .hoverGaleria p {
+    text-align: center;
+  }
+
+  //BOTON DE RVA PAQUETES Y HOTELES
+  .botonReserva {
+    width: 60%;
+  }
+
+  // HTML CONTACTO
+
+  .contacto {
+    @include columnCenter;
+  }
+
+  .infoDeContacto {
+    > iframe {
+      width: 60vh;
+      height: 50vh;
+    }
   }
 
   form {
     width: 100%;
   }
+}
+
+@media only screen and (min-width: 771px) and (max-width: 1024px) {
+  // TITULOS PAQUETES/EXCURSIONES/HOTELES
+  .tituloProductos {
+    width: 90%;
+  }
 
   //IMAGEN HEADER
-
   .tituloHeader {
     background-position: center;
   }
   .wave {
     display: none;
   }
+
+  // HTML PAQUETES TURISTICOS
+  .descripcionProductos {
+    padding: 1rem;
+    @include columnCenter;
+  }
+
+  .fotoPaquetes {
+    width: 60%;
+  }
+
+  // HTML EXCURSIONES
+  .excursionesPromocionadas {
+    grid-template-columns: 1fr;
+  }
+
+  .excursionesPromocionadas .containerExcursiones {
+    padding-top: 30px;
+  }
+
+  .excursionesPromocionadas__imagenes--left {
+    text-align: center;
+  }
+
+  .excursionesPromocionadas__info:last-child {
+    grid-row: 3/4;
+  }
+
+  .excursionesPromocionadas__info {
+    text-align: center;
+    margin-left: 40px;
+  }
+
+  .excursionesPromocionadas__descripcion {
+    margin-right: 90px;
+  }
+
+  .botonExcursion {
+    width: 30%;
+    margin-left: 270px;
+  }
+
+  .excursiones__grid {
+    grid-template-areas:
+      "DegustacionDeVinosMendoza DegustacionDeVinosMendoza CataratasDelIguazu CataratasDelIguazu"
+      "DegustacionDeVinosMendoza DegustacionDeVinosMendoza IslaVictoria IslaVictoria"
+      "RaftingRioMendoza RaftingRioMendoza TrenALasNubes TrenALasNubes";
+  }
+
+  // HTML HOTELES
+
+  .hoteles {
+    @include columnCenter;
+  }
+
+  .tituloHotel {
+    margin-left: 55px;
+  }
+
+  //BOTON DE RVA PAQUETES Y HOTELES
   .botonReserva {
     width: 45%;
   }
 
-// EXCURSIONES
-
-.excursionesPromocionadas {
-  grid-template-columns: 1fr;
-}
-
-.excursionesPromocionadas .containerExcursiones {
-  padding-top: 30px;
-}
-
-.excursionesPromocionadas__imagenes--left {
-  text-align: center;
-}
-
-.excursionesPromocionadas__info:last-child{
-  grid-row: 3/4;
-}
-
-.excursionesPromocionadas__info {
-  text-align: center;
-  margin-left: 40px;
-}
-
-.excursionesPromocionadas__descripcion {
-  margin-right: 90px;
-}
-
-.botonExcursion {
-  width: 30%;
-  margin-left: 270px;
-}
-
-.excursiones__grid {
-  grid-template-areas: 
-  "DegustacionDeVinosMendoza DegustacionDeVinosMendoza CataratasDelIguazu CataratasDelIguazu"
-  "DegustacionDeVinosMendoza DegustacionDeVinosMendoza IslaVictoria IslaVictoria"
-  "RaftingRioMendoza RaftingRioMendoza TrenALasNubes TrenALasNubes";
-}
-
-//hoteles
-
-.hoteles {
+  // HTML CONTACTO
+/*
+.contacto {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+  @include columnCenter;
 }
 
-.tituloHotel{
-  margin-left: 55px;
-}
+.infoDeContacto {
+  > iframe {
+    width: 30vh;
+    height: 30vh;
+  }
+} */
 
-
+  form {
+    width: 100%;
+  }
 }

@@ -1,0 +1,90 @@
+$colorFondo: #82c0cc;
+$margen: 20px;
+$fuentePrincipal: "Roboto", sans-serif;
+
+@mixin titulos {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin: $margen/2;
+  padding: 10px;
+}
+
+@mixin encabezado {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin columnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@mixin columnCenterCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactoHeader {
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+      to right,
+      hsla(191, 78%, 68%, 0.212),
+      hsla(192, 68%, 41%, 0.212)
+    ),
+    url(../assets/TrekkingValleFrances.jpg); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6ed6ed80, hsla(192, 68%, 41%, 0.5)),
+    url(../assets/TrekkingValleFrances.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.infoDeContacto {
+  @include columnCenterCenter;
+  justify-content: space-around;
+  > iframe {
+    width: 70vh;
+    height: 50vh;
+  }
+}
+
+form {
+  width: 450px;
+  margin: auto;
+  padding: 10px 20px;
+  font-family: $fuentePrincipal;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-family: $fuentePrincipal;
+  border: none;
+}
+
+textarea {
+  min-height: 130px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.botonEnviar {
+  background: $colorFondo;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 10px;
+}

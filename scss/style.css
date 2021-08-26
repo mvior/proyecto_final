@@ -1,153 +1,5 @@
 /*font-family: 'Lato', sans-serif;
 font-family: 'Roboto', sans-serif;*/
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-header {
-  background-color: #eef0f2;
-  margin-bottom: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.encabezadoLogo {
-  margin-left: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.logo {
-  width: 20%;
-}
-
-.container-fluid {
-  margin-right: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navbar-nav > li {
-  list-style: none;
-  background-color: #82c0cc;
-  padding: 0.2rem 0.2rem;
-  margin: 0.5rem 0.3rem;
-  border-radius: 8px;
-}
-
-.navbar-nav > li:hover {
-  border: solid 2px;
-  padding: 2px 5px;
-  border-radius: 5px;
-  background-color: #313d3f;
-}
-
-.navbar-nav > li > a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.6;
-  font-size: 1.2rem;
-  color: black;
-}
-
-.navbar-nav > li > a:hover {
-  color: white !important;
-}
-
-article > ul > li {
-  list-style: none;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5;
-}
-
-div > ul > li {
-  list-style: none;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5;
-  padding: 0.4rem;
-}
-
-footer {
-  background-color: #82c0cc;
-  margin-top: 20px;
-  padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-section {
-  background-color: #d8d8db;
-}
-
-.tituloHeader {
-  background-color: white;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-  font-size: 1.3rem;
-}
-
-h1 {
-  font-size: 3.5rem;
-}
-
-h2 {
-  font-size: 2.5rem;
-}
-
-p,
-form {
-  font-family: "Roboto", sans-serif;
-}
-
 .productosDestacados {
   text-align: center;
   margin-top: 20px;
@@ -168,107 +20,18 @@ form {
           align-items: stretch;
 }
 
-.contacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 20px;
-  margin-top: 15px;
+.paquetesHeader {
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6ed6ed80), to(rgba(33, 147, 176, 0.4))), url(../assets/TrekkingLasTorres.jpg);
+  background: linear-gradient(to right, #6ed6ed80, rgba(33, 147, 176, 0.4)), url(../assets/TrekkingLasTorres.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.infoDeContacto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.infoDeContacto > iframe {
-  width: 70vh;
-  height: 50vh;
-}
-
-form {
-  width: 450px;
-  margin: auto;
-  padding: 10px 20px;
-  font-family: "Roboto", sans-serif;
-}
-
-input,
-textarea {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 7px;
-  font-family: "Roboto", sans-serif;
-  border: none;
-}
-
-textarea {
-  min-height: 130px;
-  max-height: 200px;
-  max-width: 100%;
-}
-
-.botonEnviar {
-  background: #82c0cc;
-  border-radius: 8px;
-  font-weight: bold;
-  padding: 10px;
-}
-
-i {
-  font-size: 2rem;
-  color: black;
-  margin: 0.3rem;
-}
-
-.infoDeLaAgencia {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.fotoProductos {
+.fotoPaquetes {
   width: 40%;
-  border-radius: 5px;
-}
-
-.fotoExcursiones {
-  width: 40%;
-  border-radius: 5px;
-}
-
-.fotoPaquete {
   border-radius: 8px;
-  padding-top: 40px;
 }
 
 .productosPromocionados {
@@ -320,264 +83,9 @@ i {
       justify-content: space-around;
 }
 
-.infoExcursiones {
-  width: 50%;
-}
-
 .descripcionProductos > ul > li {
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.error {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.infoDeError {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.volver {
-  background-color: #82c0cc;
-  padding: 0.5rem 0.3rem;
-  border-radius: 8px;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.6;
-  font-size: 1.2rem;
-}
-
-.Error404 {
-  width: 50%;
-}
-
-.btn-primary {
-  background-color: #82c0cc;
-  color: black;
-  padding: 0.4rem 0.7rem;
-  border-radius: 8px;
-}
-
-.btn-primary:hover {
-  border: solid 2px;
-  padding: 0.4rem 0.7rem;
-  border-radius: 8px;
-  background-color: black;
-}
-
-.tituloProductos {
-  width: 98%;
-  padding: 5px;
-  background: #82c0cc;
-  border-radius: 8px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.tituloHotel {
-  width: 95%;
-}
-
-/* HOTELES Y OTROS PAQUETES*/
-.contenedor {
-  padding: 60px 0;
-  width: 90%;
-  max-width: 1000px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.hotelHeader {
-  background: #2193b0;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#6ed6ed80), to(rgba(33, 147, 176, 0.5))), url(../assets/SenderoLodgeTrevelin.jpg);
-  background: linear-gradient(to right, #6ed6ed80, rgba(33, 147, 176, 0.5)), url(../assets/SenderoLodgeTrevelin.jpg);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.contactoHeader {
-  background: #2193b0;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#6ed6ed80), to(rgba(33, 147, 176, 0.5))), url(../assets/TrekkingValleFrances.jpg);
-  background: linear-gradient(to right, #6ed6ed80, rgba(33, 147, 176, 0.5)), url(../assets/TrekkingValleFrances.jpg);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.excursionesHeader {
-  background: #2193b0;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#6ed6ed80), to(rgba(33, 147, 176, 0.4))), url(../assets/SalinasGrandes.jpg);
-  background: linear-gradient(to right, #6ed6ed80, rgba(33, 147, 176, 0.4)), url(../assets/SalinasGrandes.jpg);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.paquetesHeader {
-  background: #2193b0;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#6ed6ed80), to(rgba(33, 147, 176, 0.4))), url(../assets/TrekkingLasTorres.jpg);
-  background: linear-gradient(to right, #6ed6ed80, rgba(33, 147, 176, 0.4)), url(../assets/TrekkingLasTorres.jpg);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.tituloHeader {
-  width: 100%;
-  height: 600px;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-}
-
-.wave {
-  position: absolute;
-  bottom: 1%;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.hoteles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
-.infoHoteles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.fotoHoteles {
-  width: 80%;
-  border-radius: 5px;
-}
-
-.hotelesPromocionados .descripcionHoteles {
-  width: 80%;
-}
-
-.hotelesPromocionados h3 {
-  margin-bottom: 15px;
-}
-
-.descripcion {
-  padding: 0px 0px 30px 15px;
-  font-weight: 300;
-  text-align: center;
-}
-
-.galeriaHoteles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.imagenHotel {
-  width: 24%;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  height: 200px;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-}
-
-.imagenHotel > img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-}
-
-.hoverGaleria {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  background: rgba(128, 191, 203, 0.61);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hoverGaleria p {
-  color: white;
-  font-weight: bold;
-}
-
-.imagenHotel:hover .hoverGaleria {
-  -webkit-transform: scale(1);
-          transform: scale(1);
 }
 
 .otrosPaquetes {
@@ -628,6 +136,15 @@ i {
 
 .botonInfo {
   width: 100%;
+}
+
+.excursionesHeader {
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6ed6ed80), to(rgba(33, 147, 176, 0.4))), url(/assets/SalinasGrandes.jpg);
+  background: linear-gradient(to right, #6ed6ed80, rgba(33, 147, 176, 0.4)), url(/assets/SalinasGrandes.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .containerExcursiones {
@@ -764,7 +281,489 @@ i {
           transform: scale(1);
 }
 
+.tituloHotel {
+  width: 95%;
+}
+
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.hotelHeader {
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6ed6ed80), to(rgba(33, 147, 176, 0.5))), url(../assets/SenderoLodgeTrevelin.jpg);
+  background: linear-gradient(to right, #6ed6ed80, rgba(33, 147, 176, 0.5)), url(../assets/SenderoLodgeTrevelin.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.hoteles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.infoHoteles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.fotoHoteles {
+  width: 80%;
+  border-radius: 5px;
+}
+
+.hotelesPromocionados .descripcionHoteles {
+  width: 80%;
+}
+
+.hotelesPromocionados h3 {
+  margin-bottom: 15px;
+}
+
+.descripcion {
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.galeriaHoteles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.imagenHotel {
+  width: 24%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imagenHotel > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.hoverGaleria {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background: rgba(128, 191, 203, 0.61);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+}
+
+.hoverGaleria p {
+  color: white;
+  font-weight: bold;
+}
+
+.imagenHotel:hover .hoverGaleria {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.contactoHeader {
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6ed6ed80), to(rgba(33, 147, 176, 0.5))), url(../assets/TrekkingValleFrances.jpg);
+  background: linear-gradient(to right, #6ed6ed80, rgba(33, 147, 176, 0.5)), url(../assets/TrekkingValleFrances.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.infoDeContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.infoDeContacto > iframe {
+  width: 70vh;
+  height: 50vh;
+}
+
+form {
+  width: 450px;
+  margin: auto;
+  padding: 10px 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+}
+
+textarea {
+  min-height: 130px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.botonEnviar {
+  background: #82c0cc;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  background-color: #d8d8db;
+}
+
+header {
+  background-color: #eef0f2;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.encabezadoLogo {
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  width: 20%;
+}
+
+.container-fluid {
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-nav > li {
+  list-style: none;
+  background-color: #82c0cc;
+  padding: 0.2rem 0.2rem;
+  margin: 0.5rem 0.3rem;
+  border-radius: 8px;
+}
+
+.navbar-nav > li:hover {
+  border: solid 2px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: #313d3f;
+}
+
+.navbar-nav > li > a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.navbar-nav > li > a:hover {
+  color: white !important;
+}
+
+article > ul > li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+div > ul > li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  padding: 0.4rem;
+}
+
+footer {
+  background-color: #82c0cc;
+  margin-top: 20px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+i {
+  font-size: 2rem;
+  color: black;
+  margin: 0.3rem;
+}
+
+.infoDeLaAgencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tituloHeader {
+  background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p,
+form {
+  font-family: "Roboto", sans-serif;
+}
+
+.tituloProductos {
+  width: 98%;
+  padding: 5px;
+  background: #82c0cc;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tituloHeader {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.wave {
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.infoDeError {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.volver {
+  background-color: #82c0cc;
+  padding: 0.5rem 0.3rem;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+.Error404 {
+  width: 50%;
+}
+
+.btn-primary {
+  background-color: #82c0cc;
+  color: black;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  border: solid 2px;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  background-color: black;
+}
+
 @media only screen and (max-width: 414px) {
+  .zocalo {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
   .productosDestacados {
     width: 22.5rem !important;
     display: -webkit-box;
@@ -784,21 +783,14 @@ i {
   .card {
     width: 22rem !important;
   }
-  .zocalo {
-    padding: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+  .tituloProductos {
+    width: 90%;
+  }
+  .tituloHeader {
+    background-position: center;
+  }
+  .wave {
+    display: none;
   }
   .descripcionProductos {
     padding: 1rem;
@@ -816,46 +808,25 @@ i {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .tituloProductos {
-    width: 90%;
-  }
-  .fotoPaquete {
-    max-width: 90%;
-    display: block;
-    margin: auto;
-  }
-  .fotoExcursiones {
+  .infoProductos {
     width: 100%;
-    height: auto;
+    text-align: center;
   }
-  .contacto {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .infopaquete {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .infoDeContacto > iframe {
-    width: 30vh;
-    height: 30vh;
-  }
-  form {
-    width: 100%;
-  }
-  .hotelesPromocionados {
+  .resumenPaquete {
     width: 100%;
     text-align: center;
   }
-  .botonReserva {
-    width: 65%;
+  .fotoPaquetes {
+    width: 100%;
   }
   .excursionesPromocionadas {
     -ms-grid-columns: 1fr;
@@ -886,15 +857,17 @@ i {
   .excursiones__grid {
         grid-template-areas: "DegustacionDeVinosMendoza" "CataratasDelIguazu " "IslaVictoria" "RaftingRioMendoza" "TrenALasNubes";
   }
-  .tituloHeader {
-    background-position: center;
+  .hotelesPromocionados {
+    width: 100%;
+    text-align: center;
   }
-  .wave {
-    display: none;
+  .botonReserva {
+    width: 65%;
   }
   .hoteles {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: flex;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -913,25 +886,31 @@ i {
   .hoverGaleria p {
     text-align: center;
   }
-  .infoProductos {
-    width: 100%;
-    text-align: center;
+  .descripcion {
+    margin-right: 30px;
   }
-  .infopaquete {
+  .contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-  .resumenPaquete {
+  .infoDeContacto > iframe {
+    width: 30vh;
+    height: 30vh;
+  }
+  form {
     width: 100%;
-    text-align: center;
-  }
-  .descripcion {
-    margin-right: 30px;
   }
 }
 
@@ -945,6 +924,15 @@ i {
 }
 
 @media only screen and (min-width: 415px) and (max-width: 770px) {
+  .tituloProductos {
+    width: 90%;
+  }
+  .tituloHeader {
+    background-position: center;
+  }
+  .wave {
+    display: none;
+  }
   .descripcionProductos {
     padding: 1rem;
     display: -webkit-box;
@@ -961,80 +949,6 @@ i {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .tituloProductos {
-    width: 90%;
-  }
-  .fotoProductos {
-    max-width: 100%;
-    height: auto;
-  }
-  .fotoExcursiones {
-    width: 100%;
-    height: auto;
-  }
-  .fotoPaquete {
-    max-width: 90%;
-    display: block;
-    margin: auto;
-  }
-  .contacto {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .infoDeContacto > iframe {
-    width: 60vh;
-    height: 50vh;
-  }
-  form {
-    width: 100%;
-  }
-  .botonReserva {
-    width: 60%;
-  }
-  .botonExcursion {
-    width: 40%;
-  }
-  .tituloHeader {
-    background-position: center;
-  }
-  .wave {
-    display: none;
-  }
-  .hoteles {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .tituloHotel {
-    margin-left: 35px;
-  }
-  .imagenHotel {
-    width: 44%;
-  }
-  .hoverGaleria p {
-    text-align: center;
-  }
   .infoProductos {
     width: 100%;
     text-align: center;
@@ -1051,6 +965,9 @@ i {
   .resumenPaquete {
     width: 100%;
     text-align: center;
+  }
+  .fotoPaquetes {
+    width: 80%;
   }
   .excursionesPromocionadas {
     -ms-grid-columns: 1fr;
@@ -1074,22 +991,73 @@ i {
   .excursionesPromocionadas__descripcion {
     margin-right: 30px;
   }
+  .botonExcursion {
+    width: 40%;
+  }
   .excursiones__grid {
         grid-template-areas: "DegustacionDeVinosMendoza CataratasDelIguazu" "IslaVictoria RaftingRioMendoza" "TrenALasNubes TrenALasNubes";
+  }
+  .hoteles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .tituloHotel {
+    margin-left: 35px;
+  }
+  .imagenHotel {
+    width: 44%;
+  }
+  .hoverGaleria p {
+    text-align: center;
+  }
+  .botonReserva {
+    width: 60%;
+  }
+  .contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .infoDeContacto > iframe {
+    width: 60vh;
+    height: 50vh;
+  }
+  form {
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 771px) and (max-width: 1024px) {
-  .fotoProductos {
-    max-width: 100%;
-    height: auto;
-  }
   .tituloProductos {
     width: 90%;
   }
-  .fotoExcursiones {
-    width: 80%;
-    height: auto;
+  .tituloHeader {
+    background-position: center;
+  }
+  .wave {
+    display: none;
   }
   .descripcionProductos {
     padding: 1rem;
@@ -1107,17 +1075,8 @@ i {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  form {
-    width: 100%;
-  }
-  .tituloHeader {
-    background-position: center;
-  }
-  .wave {
-    display: none;
-  }
-  .botonReserva {
-    width: 45%;
+  .fotoPaquetes {
+    width: 60%;
   }
   .excursionesPromocionadas {
     -ms-grid-columns: 1fr;
@@ -1165,6 +1124,24 @@ i {
   }
   .tituloHotel {
     margin-left: 55px;
+  }
+  .botonReserva {
+    width: 45%;
+  }
+  /*
+.contacto {
+  display: flex;
+  @include columnCenter;
+}
+
+.infoDeContacto {
+  > iframe {
+    width: 30vh;
+    height: 30vh;
+  }
+} */
+  form {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

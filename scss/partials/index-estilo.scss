@@ -1,0 +1,15 @@
+
+$colorFondo: #82c0cc;
+$margen: 20px;
+$fuentePrincipal: "Roboto", sans-serif;
+
+.productosDestacados {
+    text-align: center;
+    margin-top: $margen;
+    margin-bottom: $margen;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }   

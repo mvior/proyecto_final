@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,oBAAoB,CAAC;EACjB,UAAU,EAAE,MAAM;EAClB,UAAU,EALL,IAAI;EAMT,aAAa,EANR,IAAI;EAOT,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,OAAO;CACrB",
+    "sources": [
+        "index-estilo.scss"
+    ],
+    "names": [],
+    "file": "index-estilo.css"
+}

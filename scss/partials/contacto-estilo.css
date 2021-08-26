@@ -1,0 +1,75 @@
+.contactoHeader {
+  background: #2193b0;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6ed6ed80), to(rgba(33, 147, 176, 0.5))), url(../assets/TrekkingValleFrances.jpg);
+  background: linear-gradient(to right, #6ed6ed80, rgba(33, 147, 176, 0.5)), url(../assets/TrekkingValleFrances.jpg);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.infoDeContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.infoDeContacto > iframe {
+  width: 70vh;
+  height: 50vh;
+}
+
+form {
+  width: 450px;
+  margin: auto;
+  padding: 10px 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+}
+
+textarea {
+  min-height: 130px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.botonEnviar {
+  background: #82c0cc;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 10px;
+}
+/*# sourceMappingURL=contacto-estilo.css.map */
