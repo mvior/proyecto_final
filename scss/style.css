@@ -386,9 +386,10 @@ font-family: 'Roboto', sans-serif;*/
 
 .hoverGaleria {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  top: 0;
   -webkit-transform: scale(0);
           transform: scale(0);
   background: rgba(128, 191, 203, 0.61);
@@ -396,6 +397,7 @@ font-family: 'Roboto', sans-serif;*/
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,10 +405,9 @@ font-family: 'Roboto', sans-serif;*/
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hoverGaleria p {
@@ -978,6 +979,9 @@ form {
   .fotoPaquetes {
     width: 80%;
   }
+  .resumenPaquete img {
+    width: 70%;
+  }
   .excursionesPromocionadas {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1083,6 +1087,10 @@ form {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  .infoProductos {
+    width: 80%;
+    text-align: center;
   }
   .fotoPaquetes {
     width: 60%;

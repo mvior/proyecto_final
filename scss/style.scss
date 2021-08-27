@@ -450,6 +450,10 @@ form {
     width: 80%;
   }
 
+  .resumenPaquete img {
+    width: 70%;
+  }
+
   // HTML EXCURSIONES
   .excursionesPromocionadas {
     grid-template-columns: 1fr;
@@ -546,6 +550,11 @@ form {
   .descripcionProductos {
     padding: 1rem;
     @include columnCenter;
+  }
+
+  .infoProductos {
+    width: 80%;
+    text-align: center;
   }
 
   .fotoPaquetes {
